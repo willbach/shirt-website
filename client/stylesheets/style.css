@@ -1,0 +1,124 @@
+.body {
+    margin: 0px;
+    padding: 0px;
+}
+.container-fluid {
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+}
+.mynav {
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+    padding-left: 20px;
+    padding-right: 20px;
+    height: 80px;
+    line-height: 80px;
+    vertical-align: middle;
+    color: black;
+}
+.mynav img {
+    height: 70px;
+    padding: 5px;
+}
+.navleft {
+    width: 40%;
+    height: 100%;
+    float: left;
+}
+.navright {
+    width: 40%;
+    height: 100%;
+    float: left;
+}
+.nav-link {
+    font-size: 20px;
+    text-align: right;
+    float: right;
+    margin-left: 20px;
+    text-decoration: none;
+}
+#logo{
+    text-align: left;
+}
+#brand {
+    width: 20%;
+    height: 100%;
+    font-size: 32px;
+    float: left;
+    text-align: center;
+    text-decoration: none;
+}
+.bottombar {
+    height: 40px;
+    position: absolute;
+    float: bottom;
+    width: 100%;
+    text-align: left;
+    background: linear-gradient(to bottom right, #f2d7b2, white);
+}
+.bottombar span {
+    margin-right: 30px;
+    color: black;
+    text-decoration: none;
+    size: 20px;
+}
+.carousel-caption {
+    top: 0;
+    bottom: auto;
+}
+
+#featured {
+    padding-top: 30px;
+    padding-bottom: 1px;
+}
+.row {
+    background-color: white;
+    margin: 0px;
+    padding: 0px;
+}
+
+#small-img ul {
+    margin-top: 30px;
+    list-style: none;
+}
+.product-item {
+    font-size: 24px;
+}
+.product-item img {
+    border: 0 none;
+    display: inline-block;
+    height: auto;
+    max-width: 100%;
+    margin-left: -5%;
+}
+.product-item img:hover {
+    opacity: 0.7;
+}
+.order {
+    padding-top: 1px;
+    width: 50%;
+    margin: 0 auto;
+    margin-top: 60px;
+}
+.invalid-email {
+    height: 30px;
+    line-height: 30px;
+    color: red;
+    font-size: 14px;
+    margin: 10px;
+    padding: 1px;
+}
+.contact {
+    padding-top: 1px;
+    width: 50%;
+    margin: 0 auto;
+    margin-top: 60px;
+}
+#contact-message {
+    height: 200px;
+    vertical-align: top;
+}
+
+

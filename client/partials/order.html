@@ -1,0 +1,81 @@
+<div>
+  <navbar></navbar>
+  <div class="order">
+    <form name="userInfoForm" class="form-horizontal">
+      
+      <center><h2>Submit an Order </h2></center><br>
+
+      <div class="form-group">
+        <label class="control-label col-sm-2">First Name:</label>
+        <div class="col-sm-10">
+          <input ng-model="firstName" class="form-control" type="text" placeholder="first name">
+        </div>
+      </div>
+      <div class="form-group">
+        <label class="control-label col-sm-2">Last Name:</label>
+        <div class="col-sm-10">
+          <input ng-model="lastName" class="form-control" type="text" placeholder="last name">
+        </div>
+      </div>
+      <div class="form-group">
+        <label class="control-label col-sm-2">Measurements:</label>
+        <div class="col-sm-10">
+          <input ng-model="neck" class="form-control" type="text" placeholder="neck">
+          <input ng-model="chest" class="form-control" type="text" placeholder="chest">
+          <input ng-model="arms" class="form-control" type="text" placeholder="arm length">
+          <input ng-model="waist" class="form-control" type="text" placeholder="waist">
+        </div>
+      </div>
+      <div class="form-group">
+        <label class="control-label col-sm-2">Number of Shirts:</label>
+        <div class="col-sm-10">
+          <input ng-model="shirtnum" class="form-control" type="text" placeholder="">
+          <select ng-model="color" class="form-control" ng-options="color for color in colors"><option value="" selected>Select a color</option></select>
+        </div>
+      </div>
+      <div class="form-group">
+        <label class="control-label col-sm-2">Shipping Address:</label>
+        <div class="col-sm-10">
+          <input ng-model="street" class="form-control" type="text" placeholder="Line 1">
+          <input ng-model="street2" class="form-control" type="text" placeholder="Line 2">
+          <input ng-model="city" class="form-control" type="text" placeholder="City">
+          <input ng-model="state" class="form-control" type="text" placeholder="State">
+          <input ng-model="zip" class="form-control" type="text" placeholder="Zip">
+        </div>
+      </div>
+      <div class="form-group">
+        <label class="control-label col-sm-2">Email:</label>
+        <div class="col-sm-10">
+           <input ng-model="email" class="form-control" type="text" placeholder="Email">
+        </div>
+        <center>
+          <div class="invalid-email" ng-if="invalidEmail">Please enter a valid email address</div>
+        </center>
+      </div>
+      <div class="form-group">
+        <label class="control-label col-sm-2">Phone:</label>
+        <div class="col-sm-10">
+           <input ng-model="phone" class="form-control" type="text" placeholder="Phone Number">
+        </div>
+      </div>
+    </form>
+    <br>
+    <form stripe-form="stripeCallback" name="checkoutForm" class="form-horizontal">
+      <div class="form-group">
+        <label class="control-label col-sm-2">Credit Card Information:</label>
+        <div class="col-sm-10">
+          <input ng-model="number" placeholder="Card Number" class="form-control" payments-format="card" payments-validate="card" name="card" />
+          <input ng-model="expiry" placeholder="Expiration" class="form-control" payments-format="expiry" payments-validate="expiry" name="expiry" />
+          <input ng-model="cvc" placeholder="CVC" class="form-control" payments-format="cvc" payments-validate="cvc" name="cvc" />
+          <input ng-model="addressZip" placeholder="Billing Zip Code" class="form-control" name="addressZip" />
+          <button type="submit">Submit</button>
+        </div>
+      </div>
+    </form>
+  </div>
+  <div ng-if="stripeForm.card.$invalid">
+    Error: invalid card number!
+  </div>
+
+  <bottombar></bottombar>
+</div>

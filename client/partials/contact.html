@@ -1,0 +1,25 @@
+<div>
+  <navbar></navbar>
+  <div class="contact">
+    <div class="contact-title">
+      <center>
+        <h2>Contact Us</h2>
+        <p>Please fill out the contact form below</p>
+      </center>
+    </div>
+    
+    <div name="contactForm">
+      <div class="form-group">
+        <br>
+        <select ng-model="contactReason" ng-options="reason for reason in contactReasons" class="form-control"><option value="" selected>What is this in regards to?</select> <br>
+        <input type="text" ng-model='name' placeholder="name" class="form-control"></input> <br>
+        <input type="text" ng-model='email' placeholder="email" class="form-control"></input> <br>
+        <input id="contact-message" type="text" ng-model='messageText' placeholder="Please write your message here" class="form-control"></input> <br>
+        <button ng-click="contact()">Send Message</button>
+      </div>
+    </div>
+  </div>
+
+
+    <bottombar></bottombar>
+</div>

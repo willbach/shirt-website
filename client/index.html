@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Shirts Test Site</title>
+  <script type="text/javascript" src="angular/angular.min.js"></script>
+  <script type="text/javascript" src="angular-ui-router/release/angular-ui-router.min.js"></script>
+  <script type="text/javascript" src="angular-payments/lib/angular-payments.min.js"></script>
+
+  <script type="text/javascript" src="./controllers/homeController.js"></script>
+  <script type="text/javascript" src="./controllers/productsController.js"></script>
+  <script type="text/javascript" src="./controllers/aboutController.js"></script>
+  <script type="text/javascript" src="./controllers/orderController.js"></script>
+  <script type="text/javascript" src="./controllers/contactController.js"></script>
+  <script type="text/javascript" src="./controllers/cartController.js"></script>
+  <script type="text/javascript" src="./services/cartService.js"></script>
+  <script type="text/javascript" src="./controllers/navbar.js"></script>
+  <script type="text/javascript" src="./controllers/bottombar.js"></script>
+  
+  
+
+  <!--<script src="./../build/webpack-bundle.js"></script>
+  <script type="text/javascript" src="carousel.js"/>-->
+
+  <script type="text/javascript" src="./app.js"></script>
+
+  <script
+  src="https://code.jquery.com/jquery-3.1.1.slim.min.js"
+  integrity="sha256-/SIrNqv8h6QGKDuNoLGA4iret+kyesCkHGzVUUV0shc="
+  crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+  <script type="text/javascript" src="https://js.stripe.com/v2/"></script>
+  <script>Stripe.setPublishableKey('pk_test_eDCnGXPSopnddRSUPnznpXMY');</script>
+
+  <!--<link rel="stylesheet" href="stylesheets/bootstrap-imports.css">-->
+  <link rel="stylesheet" href="stylesheets/style.css">
+  
+
+</head>
+<body ng-app='myApp'>
+  <div class="container-fluid" ui-view>
+      
+  </div>
+</body>
+</html>
+
+
+  <!--<form class="login" action="/login" method="post">
+    Username: <br>
+    <input name="username" type="text"><br>
+    Password: <br>
+    <input name="password" type="password"><br>
+    <input type="submit" value="Log In">
+  </form>
+
+  <form class="create-user" action="/create-user" method="post">
+    Username: <br>
+    <input name="username" type="text"><br>
+    Password: <br>
+    <input name="password1" type="password"><br>
+    Re-enter Password: <br>
+    <input name="password2" type="password"><br>
+    <input type="submit" value="Create Account">
+  </form>-->
